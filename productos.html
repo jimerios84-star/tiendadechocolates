@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Chocolates</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    
+     /* CONTENIDO PRINCIPAL */
+    .contenido {
+      grid-column: 2;
+      grid-row: 1;
+      background-color: rgb(255, 253, 253);
+      border-radius: 20px;
+      box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.2);
+      padding: 30px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: url("assets/fondo/choco_prod.jpg") center/cover no-repeat;
+      overflow: hidden;
+      margin-left: 10px;
+    }
+
+    /* SECCIÓN PRODUCTOS */
+.productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #5B320C;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6B4C2A;
+}
+
+.card span {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* SECCIÓN RESEÑAS (GRID) */
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.reseña {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-size: 0.9rem;
+}
+
+.reseña strong {
+  display: block;
+  margin-top: 8px;
+  color: #5B320C;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="contenedor-principal">
+
+    <!-- 🟫 MENÚ IZQUIERDO -->
+    <nav class="menu-lateral">
+      <a href="index.html">
+        <img src="assets/logos/logo_160.jpg" alt="Logo Tienda de Chocolates" class="logo">
+      </a>
+      <ul>
+        <li><a href="menu.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li>
+          <a href="productos.html">PRODUCTOS</a>
+          <ul>
+            <li><a href="productos.html">Cookies</a></li>
+            <li><a href="productos.html">Bombones</a></li>
+            <li><a href="productos.html">Regalos</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+      <div class="novedades" onclick="window.open('novedades.html','Novedades','width=430,height=430')">
+        + NOVEDADES
+      </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="contenido">
+  <h1>Nuestros Productos</h1>
+  <h4>Disfrutá los sabores más intensos del chocolate artesanal</h4>
+
+  <!-- CONTENEDOR DE PRODUCTOS (Flexbox) -->
+  <div class="productos">
+    <div class="card">
+      <img src="assets/galeria/cookie.jfif" alt="Bombones artesanales">
+      <h3>Cookies</h3>
+      <p>Galletitas con chips, rellenas y bañadas.</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/galeria/icono_bombon.jpg" alt="Cookies de chocolate">
+      <h3>Bombones</h3>
+      <p>Delicados, rellenos de licor y frutas.</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/galeria/regalo.jfif" alt="Regalos dulces">
+      <h3>Regalos</h3>
+      <p>Combos personalizados para sorprender a quien más querés.</p>
+    </div>
+  </div>
+
+  <!--SECCIÓN DE RESEÑAS (Grid) -->
+  <br><br><h2 style="color: white;">Reseñas de nuestros clientes</h2>
+  <div class="reseñas">
+    <div class="reseña">
+      <p>"Los bombones son espectaculares, se nota que son artesanales."</p>
+      <strong>– Carla M.</strong>
+    </div>
+    <div class="reseña">
+      <p>"La presentación de los regalos es hermosa. Todo llegó perfecto."</p>
+      <strong>– Diego F.</strong>
+    </div>
+    <div class="reseña">
+      <p>"Las cookies son mi perdición, siempre frescas y crocantes."</p>
+      <strong>– Sofía G.</strong>
+    </div>
+  </div>
+</section>
+
+    <!--FOOTER -->
+    <footer>
+      <div class="contact">
+        <span>Tienda de Chocolates · 4111 1111 · Buenos Aires · Argentina</span>
+        <span>
+          <img src="assets/logos/mailbox.png" width="22" height="16" alt="Correo">
+          <a href="mailto:info@tiendadechocolates.com.ar">info@tiendadechocolates.com.ar</a>
+        </span>
+      </div>
+      <div class="social">
+        <span>Seguinos en:</span>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="assets/logos/ig.png" width="22" height="22" alt="Instagram">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

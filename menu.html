@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Chocolates</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <style> 
+  
+  /* CONTENIDO PRINCIPAL */
+    .contenido {
+      grid-column: 2;
+      grid-row: 1;
+      background-color: rgb(255, 253, 253);
+      border-radius: 20px;
+      box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.2);
+      padding: 30px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: url("assets/fondo/choco_menu.jpg") center/cover no-repeat;
+      overflow: hidden;
+      opacity: 0.4;
+      margin-left: 10px;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="contenedor-principal">
+
+    <!-- 🟫 MENÚ IZQUIERDO -->
+    <nav class="menu-lateral">
+      <a href="index.html">
+        <img src="assets/logos/logo_160.jpg" alt="Logo Tienda de Chocolates" class="logo">
+      </a>
+      <ul>
+        <li><a href="menu.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li>
+          <a href="productos.html">PRODUCTOS</a>
+          <ul>
+            <li><a href="productos.html">Cookies</a></li>
+            <li><a href="productos.html">Bombones</a></li>
+            <li><a href="productos.html">Regalos</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+      <div class="novedades" onclick="window.open('novedades.html','Novedades','width=430,height=430')">
+        + NOVEDADES
+      </div>
+    </nav>
+
+    <!-- 🟫 CONTENIDO PRINCIPAL -->
+    <section class="contenido" img="assets/fondo/choco_menu.jpg">
+        <h1>Bienvenidos a Tienda de Chocolates</h1>
+        <h4>Explorá nuestros productos y conocé las novedades que tenemos para vos.</h2>
+    </section>
+
+    <!-- 🟫 FOOTER -->
+    <footer>
+      <div class="contact">
+        <span>Tienda de Chocolates · 4111 1111 · Buenos Aires · Argentina</span>
+        <span>
+          <img src="assets/logos/mailbox.png" width="22" height="16" alt="Correo">
+          <a href="mailto:info@tiendadechocolates.com.ar">info@tiendadechocolates.com.ar</a>
+        </span>
+      </div>
+      <div class="social">
+        <span>Seguinos en:</span>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="assets/logos/ig.png" width="22" height="22" alt="Instagram">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

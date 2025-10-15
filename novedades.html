@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novedades - Tienda de Chocolates</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    
+    /* Contenedor del pop-up */
+    .popup-contenido {
+      background: #fffaf2;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      justify-items: center;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+    /* Iframe dentro de grid */
+    .popup-contenido iframe {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .popup-contenido h3 {
+      color: #5B320C;
+      margin-top: 1rem;
+      font-family: 'verdana', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Pop-up -->
+  <div id="popup">
+    <div class="popup-contenido">
+      <iframe
+        src="https://www.youtube.com/embed/ZUWoaHRVWQg"
+        title="Novedades en Tienda de Chocolates"
+        allowfullscreen>
+      </iframe>
+      <h3>Nueva Producción</h3>
+    </div>
+  </div>
+</body>
+</html>
