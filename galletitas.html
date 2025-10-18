@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Chocolates</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* CONTENIDO PRINCIPAL */
+    .contenido {
+      grid-column: 2;
+      grid-row: 1;
+      background-color: rgb(255, 253, 253);
+      border-radius: 20px;
+      box-shadow: 5px 0px 10px rgba(0,0,0,0.2);
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: url("./assets/fondo/fondo_body3.png") center/cover repeat;
+      margin-left: 10px;
+    }
+
+    .contenido h1 {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .contenido h4 {
+      color: white;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* GRID DE PRODUCTOS */
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 5px;
+      justify-items: center;
+      align-items: start;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.85rem;
+      color: #5B320C;
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: fit;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin: 8px 0 4px;
+    }
+
+    .card p {
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+    }
+
+    .precio {
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .agregar {
+      background-color: #f2e4d0;
+      color: #5B320C;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    .agregar:hover {
+      background-color: #e6d2b6;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="contenedor-principal">
+
+    <!-- MENÚ IZQUIERDO -->
+    <nav class="menu-lateral">
+      <a href="index.html">
+        <img src="assets/logos/logo_160.jpg" alt="Logo Tienda de Chocolates" class="logo">
+      </a>
+      <ul>
+        <li><a href="menu.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="carrito.html">CARRITO</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+      <div class="novedades" onclick="window.open('novedades.html','Novedades','width=430,height=430')">
+        + NOVEDADES
+      </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="contenido">
+      <h1>Cookies</h1>
+      <h4>Disfrutá los sabores más intensos del chocolate en forma de galletita</h4>
+
+      <div class="productos">
+        <div class="card">
+          <img src="assets/galeria/galles/1_s.jpg" alt="Cookies">
+          <h3>Cookies de chocolate</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+        <div class="card">
+          <img src="assets/galeria/galles/2_s.jpg" alt="Cookies">
+          <h3>Choco y avena</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+
+        <div class="card">
+            <img src="assets/galeria/galles/3_s.jpg" alt="Cookies">
+          <h3>Cookie Dubai</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+    <div class="card">
+           <img src="assets/galeria/galles/4_s.jpg" alt="Cookies">
+          <h3>Choco con almendras</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+            <div class="card">
+           <img src="assets/galeria/galles/5_s.jpg" alt="Cookies">
+          <h3>Menta y chocolate</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+           <div class="card">
+           <img src="assets/galeria/galles/6_s.jpg" alt="Cookies">
+          <h3>Choco blanco</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+            <div class="card">
+           <img src="assets/galeria/galles/7_s.jpg" alt="Cookies">
+          <h3>Algarroba</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+            <div class="card">
+           <img src="assets/galeria/galles/8_s.jpg" alt="Cookies">
+          <h3>Jengibre y Choco</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+            <div class="card">
+           <img src="assets/galeria/galles/9_s.jpg" alt="Cookies">
+          <h3>Choco y frambuesa</h3>
+          <span class="precio">$1500</span>
+          <p class="agregar">Agregar</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="contact">
+        <span>Tienda de Chocolates · 4111 1111 · Buenos Aires · Argentina</span>
+        <span>
+          <img src="assets/logos/mailbox.png" width="22" height="16" alt="Correo">
+          <a href="mailto:info@tiendadechocolates.com.ar">info@tiendadechocolates.com.ar</a>
+        </span>
+      </div>
+      <div class="social">
+        <span>Seguinos en:</span>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="assets/logos/ig.png" width="22" height="22" alt="Instagram">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
